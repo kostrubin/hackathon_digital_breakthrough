@@ -197,6 +197,7 @@ ul.left-menu>li:last-child>a:hover {
 }
 
 .broadcast {
+    position: relative;
     max-width: 620px;
 }
 
@@ -205,15 +206,19 @@ ul.left-menu>li:last-child>a:hover {
     height: auto;
 }
 
-.player {
+.player a img {
+    position: absolute;
+    top: calc(50% - 75px);
+    left: calc(50% - 50px);
+    max-width: 100px;
     opacity: .8;
-    cursor: pointer;
 }
 
-.player:hover {
+.player a:hover img {
     transition: opacity 0.3s;
     opacity: 1;
 }
+
 
 .description {
     display: flex;
