@@ -1,0 +1,264 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    position: relative;
+    max-width: 980px;
+    margin: 0 auto;
+    font-family: Roboto, sans-serif;
+    background-color: #000;
+    color: #fff;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+
+.logo a {
+    border: none;
+}
+
+.logo img {
+    max-width: 135px;
+}
+
+nav {
+    font-weight: bold;
+}
+
+nav ul li:nth-child(2) {
+    margin: 0 110px;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    list-style-type: none;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+    border-bottom: 2px solid #000;
+}
+
+a:hover {
+    border-color: #fff;
+    transition: border-color .5s;
+}
+
+.profile a {
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+}
+
+.profile img {
+    align-self: center;
+    width: 40px;
+}
+
+.profile p {
+    margin-top: 5px;
+}
+
+.timeline {
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    top: 166px;
+    background-color: #fff;
+    z-index: -1;
+}
+
+.now, .marker {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.marker::after {
+    content: '';
+    width: 15px;
+    height: 15px;
+    background-color: #eb1e25;
+    border-radius: 50%;
+}
+
+.marker::before {
+    content: '';
+    width: 2px;
+    height: 28px;
+    background-color: #eb1e25;
+}
+
+.now p {
+    margin: 5px 0;
+}
+
+.now>p:first-child {
+    color: #4af91e;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.now>p:nth-child(2) {
+    font-size: 12px;
+}
+
+ul.events>li {
+    flex-basis: 95px;
+    height: 3px;
+    margin-top: 10px;
+    background-color: #fff;
+}
+
+ul.events>li:nth-child(6) {
+    position: relative;
+    top: -40px;
+    background-color: #ffee29;
+    text-align: center;
+}
+
+ul.events>li:nth-child(6)::after {
+    position: relative;
+    content: 'Coffee break';
+    color: #887d7d;
+    font-size: 12px;
+    text-align: center;
+    top: 28px;
+    text-transform: none;
+}
+
+ul.dates {
+    margin-top: 20px;
+    max-width: 280px;
+}
+
+ul.dates>li:not(:first-child) {
+    color: #887d7d;
+}
+
+section {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+}
+
+ul.left-menu {
+    flex-direction: column;
+    max-width: 140px;
+}
+
+ul.left-menu>li {
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+
+ul.left-menu>li:nth-child(4) {
+    position: relative;
+}
+
+ul.left-menu>li:nth-child(4):before {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: -20px;
+    width: 10px;
+    height: 10px;
+    background-color: #eb1e25;
+    border-radius: 50%;
+}
+
+ul.left-menu>li:last-child {
+    margin-bottom: 0;
+    border-radius: 3px;
+    text-align: center;
+}
+
+ul.left-menu>li:last-child>a {
+    padding: 10px 15px;
+    background-color: #2e2eff;
+    opacity: .9;
+    border: none;
+}
+
+ul.left-menu>li:last-child>a:hover {
+    transition: all .3s;
+    opacity: 1;
+    box-shadow: 0 0 25px #2e2eff;
+}
+
+.broadcast {
+    max-width: 620px;
+}
+
+.broadcast img {
+    max-width: 100%;
+    height: auto;
+}
+
+.player {
+    opacity: .8;
+    cursor: pointer;
+}
+
+.player:hover {
+    transition: opacity 0.3s;
+    opacity: 1;
+}
+
+.description {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.description>p:first-child {
+    position: relative;
+    font-size: 14px;
+    padding-left: 15px;
+}
+
+.description>p:first-child:before {
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    background-color: #4af91e;
+    border-radius: 50%;
+}
+
+.description>p:nth-child(2) {
+    flex-basis: 330px;
+    font-size: 12px;
+}
+
+.description>p:nth-child(2) span {
+    display: block;
+    font-size: 10px;
+    color: #887d7d;
+}
+
+.description>p:nth-child(2) span:first-child {
+    margin-top: 5px;
+    text-transform: uppercase;
+}
+
+.description a {
+    width: 24px;
+    height: 17px;
+    background-image: url(img/message.png);
+    background-size: 24px;
+    background-repeat: no-repeat;
+    border: none;
+}
