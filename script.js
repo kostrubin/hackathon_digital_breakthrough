@@ -1,8 +1,11 @@
 const afterpartyButton = document.getElementById('afterparty')
 const modalDialog = document.getElementsByClassName('modal')[0]
 const closeButton = document.getElementById('close')
+const name = document.getElementById('name')
+const company = document.getElementById('company')
+const position = document.getElementById('position')
 const login = document.getElementById('login')
-const code = document.getElementById('code')
+const validateFields = () => name.value && company.value && position.value
 
 afterpartyButton.addEventListener('click', (e) => {
     e.preventDefault()
@@ -14,18 +17,32 @@ closeButton.addEventListener('click', (e) => {
     modalDialog.classList.add('hidden')
 })
 
-code.addEventListener('input', (e) => {
-    if (!code.value) {
+name.addEventListener('input', () => {
+    if (!validateFields()) {
         login.classList.add('disabled')
     } else {
         login.classList.remove('disabled')
     }
 })
 
-code.addEventListener('keydown', (e) => e.keyCode === 69 ? e.preventDefault() : null)
+company.addEventListener('input', () => {
+    if (!validateFields()) {
+        login.classList.add('disabled')
+    } else {
+        login.classList.remove('disabled')
+    }
+})
+
+position.addEventListener('input', () => {
+    if (!validateFields()) {
+        login.classList.add('disabled')
+    } else {
+        login.classList.remove('disabled')
+    }
+})
 
 login.addEventListener('click', (e) => {
-    if (!code.value) {
+    if (!validateFields()) {
         e.preventDefault()
     }
 })
