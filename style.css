@@ -443,6 +443,17 @@ figure img {
     font-size: 14px;
 }
 
+.modal-content>p.rules {
+    margin-top: 0;
+    font-size: 12px;
+    color: #ccc;
+    font-style: italic;
+}
+
+.modal-content>p.rules a {
+    color: #2e2eff;
+}
+
 form {
     display: flex;
     flex-direction: column;
@@ -451,9 +462,9 @@ form {
 
 form > * {
     width: 400px;
-    margin-bottom: 25px;
-    padding: 15px 40px;
-    border: 2px solid #2e2eff;
+    margin-bottom: 20px;
+    padding: 10px 40px;
+    border: 1px solid #2e2eff;
     border-radius: 10px;
     text-align: center;
     font-size: 20px;
