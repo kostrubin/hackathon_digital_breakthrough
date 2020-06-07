@@ -56,7 +56,7 @@
                 <li class="schedule-menu-item"><a href="#">your schedule</a></li>
                 <li><a href="#">members</a></li>
                 <li><a href="#">groups</a></li>
-                <li><a href="#">afterparty</a></li>
+                <li><a id="afterparty" href="#">afterparty</a></li>
             </ul>
             <div class="broadcast">
                 <div class="player">
@@ -75,5 +75,16 @@
             </div>
         </section>
     </main>
+    <div class="modal hidden">
+        <div class="modal-content">
+            <img src="img/qr.png" width="300" alt="QR code">
+            <form>
+                <input id="code" type="number" placeholder="Scan QR or enter your code here" required>
+                <a id="login" class="button disabled" href="afterparty.html">Let's have a fun!</a>
+            </form>
+            <button id="close"></button>
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
