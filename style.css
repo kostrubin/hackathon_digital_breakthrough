@@ -697,3 +697,19 @@ h2 {
     justify-content: flex-end;
     max-width: 295px;
 }
+
+.back a {
+    margin-top: 15px;
+    padding: 5px 20px;
+    text-transform: uppercase;
+    background: #2e2eff;
+    border: none;
+    opacity: .9;
+    cursor: pointer;
+}
+
+.back a:hover {
+    transition: all .3s;
+    opacity: 1;
+    box-shadow: 0 0 10px #2e2eff;
+}
